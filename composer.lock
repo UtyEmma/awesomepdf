@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b75c335bfb82e4033bd6ca32c89cd98a",
+    "content-hash": "ae85828a321b436ab55ddaba146a7a47",
     "packages": [
+        {
+            "name": "beganovich/snappdf",
+            "version": "v5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beganovich/snappdf.git",
+                "reference": "3b21c7a88a4d05b01a606bc74f1950b0e9e820b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beganovich/snappdf/zipball/3b21c7a88a4d05b01a606bc74f1950b0e9e820b1",
+                "reference": "3b21c7a88a4d05b01a606bc74f1950b0e9e820b1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-zip": "*",
+                "php": ">=8.2",
+                "symfony/console": "^7.0",
+                "symfony/filesystem": "^7.0",
+                "symfony/process": "^7.0"
+            },
+            "require-dev": {
+                "ext-fileinfo": "*",
+                "friendsofphp/php-cs-fixer": "^3.6",
+                "phpunit/phpunit": "^11.0"
+            },
+            "bin": [
+                "snappdf"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Beganovich\\Snappdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Beganović",
+                    "email": "k1pstabug@gmail.com"
+                }
+            ],
+            "description": "Convert webpages or HTML into the PDF file using Chromium or Google Chrome.",
+            "support": {
+                "issues": "https://github.com/beganovich/snappdf/issues",
+                "source": "https://github.com/beganovich/snappdf/tree/v5.0"
+            },
+            "time": "2024-03-20T22:03:41+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -1044,6 +1096,55 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "h4cc/wkhtmltopdf-amd64",
+            "version": "0.12.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4cc/wkhtmltopdf-amd64.git",
+                "reference": "4e2ab2d032a5d7fbe2a741de8b10b8989523c95b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4cc/wkhtmltopdf-amd64/zipball/4e2ab2d032a5d7fbe2a741de8b10b8989523c95b",
+                "reference": "4e2ab2d032a5d7fbe2a741de8b10b8989523c95b",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/wkhtmltopdf-amd64"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "h4cc\\WKHTMLToPDF\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL Version 3"
+            ],
+            "authors": [
+                {
+                    "name": "Julius Beckmann",
+                    "email": "github@h4cc.de"
+                }
+            ],
+            "description": "Convert html to pdf using webkit (qtwebkit). Static linked linux binary for amd64 systems.",
+            "homepage": "http://wkhtmltopdf.org/",
+            "keywords": [
+                "binary",
+                "convert",
+                "pdf",
+                "snapshot",
+                "thumbnail",
+                "wkhtmltopdf"
+            ],
+            "support": {
+                "issues": "https://github.com/h4cc/wkhtmltopdf-amd64/issues",
+                "source": "https://github.com/h4cc/wkhtmltopdf-amd64/tree/master"
+            },
+            "time": "2018-01-15T06:57:33+00:00"
         },
         {
             "name": "inertiajs/inertia-laravel",
@@ -3846,6 +3947,69 @@
                 }
             ],
             "time": "2024-01-23T14:51:35+00:00"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v7.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "408105dff4c104454100730bdfd1a9cdd993f04d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/408105dff4c104454100730bdfd1a9cdd993f04d",
+                "reference": "408105dff4c104454100730bdfd1a9cdd993f04d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v7.0.6"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-03-21T19:37:36+00:00"
         },
         {
             "name": "symfony/finder",
